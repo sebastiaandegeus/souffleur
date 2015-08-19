@@ -3,8 +3,15 @@
 module Souffleur
   module Address
     class Netherlands
-      STREETS = ['Lloydstraat', 'Westzeedijk', 'Stadhuisplein']
-      CITIES = ['Amsterdam', 'Rotterdam', 'Den Haag']
+      STREETS = ['Kerkstraat', 'Schoolstraat', 'Molenstraat', 'Damrak', 'Dorpsstraat', 'Grote Visserijstraat',
+                 'Erasmusweg', 'Molenweg', 'Julianastraat', 'Parallelweg', 'Nieuwstraat', 'Wilhelminastraat',
+                 'Sportlaan', 'Industrieweg', 'Beatrixstraat', 'Kastanjelaan', 'Stationsweg', 'Eikenlaan', 'Markt',
+                 'Prins Bernhardstraat', 'Prinses Margrietlaan', 'Prinsenhove', 'Schiedamse Vest', 'Emmastraat',
+                 'Beukenlaan', 'Boompjeskade', 'J.H. van den Broekstraat']
+      CITIES = ['Amsterdam', 'Rotterdam', 'Den Haag', 'Utrecht', 'Eindhoven', 'Tilburg', 'Groningen', 'Almere', 'Breda',
+                'Nijmegen', 'Enschede', 'Haarlem', 'Amersfoort', 'Arnhem', 'Zaanstad', 'Hoofddorp', "'s-Hertogenbosch",
+                'Zoetermeer', 'Zwolle', 'Maastricht', 'Leiden', 'Dordrecht', 'Ede', 'Leeuwarden', 'Emmen',
+                'Alphen aan den Rijn', 'Alkmaar', 'Westland', 'Delft', 'Venlo']
       PROVINCES = ['Groningen', 'Friesland', 'Drenthe', 'Overijssel', 'Flevoland', 'Gelderland', 'Utrecht',
                    'Noord-Holland', 'Zuid-Holland', 'Zeeland', 'Noord-Brabant', 'Limburg']
 
