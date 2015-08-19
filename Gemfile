@@ -1,11 +1,16 @@
 source 'https://rubygems.org'
 
-group :development do
+ruby '2.2.3'
+
+group :development, :test do
   # use rubocop for static code analysis
   gem 'rubocop', require: false
 
   # use rubycritic to check code quality
   gem 'rubycritic', require: false
+
+  # use rspec for testing
+  gem 'rspec', require: false
 end
 
 # Specify your gem's dependencies in souffleur.gemspec
