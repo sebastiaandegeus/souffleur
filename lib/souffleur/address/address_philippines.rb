@@ -2,7 +2,9 @@
 
 module Souffleur
   module Address
-    class Philippines < Base
+    class Philippines
+      include Data
+
       def self.city
         data(:cities).sample
       end

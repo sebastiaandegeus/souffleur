@@ -2,7 +2,9 @@
 
 module Souffleur
   module Address
-    class Netherlands < Base
+    class Netherlands
+      include Data
+
       HOUSE_NUMBERS = ['1', '12', '123', '1A', '1a', '3 boven', '35 twee-hoog', '8-10']
 
       def self.street

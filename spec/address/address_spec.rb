@@ -10,6 +10,6 @@ describe Souffleur::Address do
   end
 
   it 'should return a state' do
-    expect(Souffleur::Address::STATES).to include(Souffleur::Address.state)
+    expect(Souffleur::Address.data(:states)).to include(Souffleur::Address.state)
   end
 end

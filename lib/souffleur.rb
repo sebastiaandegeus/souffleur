@@ -1,5 +1,5 @@
 require 'souffleur/version'
-require 'souffleur/base'
+require 'souffleur/data'
 require 'souffleur/address/address'
 require 'souffleur/address/address_germany'
 require 'souffleur/address/address_netherlands'
