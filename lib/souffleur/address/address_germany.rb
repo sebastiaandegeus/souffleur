@@ -2,7 +2,7 @@
 
 module Souffleur
   module Address
-    class Germany
+    class Germany < Base
       STREETS = ['Ackerstraße', 'Bernauer Straße']
       CITIES = ['Berlin', 'Munchen', 'Hamburg']
 
