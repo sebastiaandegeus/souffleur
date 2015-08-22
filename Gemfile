@@ -11,6 +11,9 @@ group :development, :test do
 
   # use rspec for testing
   gem 'rspec', require: false
+
+  # use pry for debugging
+  gem 'pry'
 end
 
 # Specify your gem's dependencies in souffleur.gemspec

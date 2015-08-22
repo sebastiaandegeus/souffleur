@@ -12,5 +12,9 @@ module Souffleur
 
       range.sample
     end
+
+    def self.integer(length = 10)
+      rand(10**length)
+    end
   end
 end

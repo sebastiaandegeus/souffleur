@@ -2,29 +2,27 @@
 
 module Souffleur
   module Address
-    class Netherlands
-      STREETS = ['Kerkstraat', 'Schoolstraat', 'Molenstraat', 'Damrak', 'Dorpsstraat', 'Grote Visserijstraat',
-                 'Erasmusweg', 'Molenweg', 'Julianastraat', 'Parallelweg', 'Nieuwstraat', 'Wilhelminastraat',
-                 'Sportlaan', 'Industrieweg', 'Beatrixstraat', 'Kastanjelaan', 'Stationsweg', 'Eikenlaan', 'Markt',
-                 'Prins Bernhardstraat', 'Prinses Margrietlaan', 'Prinsenhove', 'Schiedamse Vest', 'Emmastraat',
-                 'Beukenlaan', 'Boompjeskade', 'J.H. van den Broekstraat']
-      CITIES = ['Amsterdam', 'Rotterdam', 'Den Haag', 'Utrecht', 'Eindhoven', 'Tilburg', 'Groningen', 'Almere', 'Breda',
-                'Nijmegen', 'Enschede', 'Haarlem', 'Amersfoort', 'Arnhem', 'Zaanstad', 'Hoofddorp', "'s-Hertogenbosch",
-                'Zoetermeer', 'Zwolle', 'Maastricht', 'Leiden', 'Dordrecht', 'Ede', 'Leeuwarden', 'Emmen',
-                'Alphen aan den Rijn', 'Alkmaar', 'Westland', 'Delft', 'Venlo']
-      PROVINCES = ['Groningen', 'Friesland', 'Drenthe', 'Overijssel', 'Flevoland', 'Gelderland', 'Utrecht',
-                   'Noord-Holland', 'Zuid-Holland', 'Zeeland', 'Noord-Brabant', 'Limburg']
+    class Netherlands < Base
+      HOUSE_NUMBERS = ['1', '12', '123', '1A', '1a', '3 boven', '35 twee-hoog', '8-10']
 
       def self.street
-        STREETS.sample
+        data(:streets).sample
+      end
+
+      def self.house_number
+        HOUSE_NUMBERS.sample
+      end
+
+      def self.zipcode
+        [*1000..9999].sample.to_s + ' ' + ('AA'..'ZZ').to_a.sample
       end
 
       def self.city
-        CITIES.sample
+        data(:cities).sample
       end
 
       def self.province
-        PROVINCES.sample
+        data(:provinces).sample
       end
     end
   end
