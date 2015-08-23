@@ -4,6 +4,7 @@ require 'souffleur/address/address'
 require 'souffleur/address/address_germany'
 require 'souffleur/address/address_netherlands'
 require 'souffleur/address/address_philippines'
+require 'souffleur/address/address_usa'
 require 'souffleur/number/number'
 
 # souffleur main module
