@@ -14,7 +14,7 @@ module Souffleur
     end
 
     def self.integer(length = 10)
-      rand(10**length)
+      rand(1e9...1e10).to_i.to_s.to_i
     end
   end
 end
