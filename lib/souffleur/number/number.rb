@@ -3,7 +3,7 @@
 module Souffleur
   module Number
     def self.digit
-      [*0..9].sample
+      rand(10)
     end
 
     def self.between(first, last)
