@@ -7,10 +7,9 @@ module Souffleur
     end
 
     def self.between(first, last)
-      range = [*first..last]
-      fail ArgumentError, "This is not a valid range: [*#{first}..#{last}]" if range.empty?
+      fail ArgumentError, "This is not a valid range: #{first}..#{last}" if first > last
 
-      range.sample
+      rand(first..last)
     end
 
     def self.integer(length = 10)
