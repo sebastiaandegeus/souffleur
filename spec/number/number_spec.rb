@@ -41,5 +41,10 @@ describe Souffleur::Number do
     it 'should return a 10 digit integer by default' do
       expect(Souffleur::Number.integer.to_s.size).to eq 10
     end
+
+    it 'should return a X digit integer' do
+      digits = rand(1..20)
+      expect(Souffleur::Number.integer(digits).to_s.size).to eq digits
+    end
   end
 end
