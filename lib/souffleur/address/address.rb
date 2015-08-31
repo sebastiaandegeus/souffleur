@@ -14,5 +14,9 @@ module Souffleur
     def self.city
       CITIES.sample
     end
+
+    def self.country
+      data(:countries).sample
+    end
   end
 end

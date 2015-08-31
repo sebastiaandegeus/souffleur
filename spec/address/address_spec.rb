@@ -12,4 +12,8 @@ describe Souffleur::Address do
   xit 'should return a state' do
     expect(Souffleur::Address.data(:states)).to include(Souffleur::Address.state)
   end
+
+  it 'should return a country' do
+    expect(Souffleur::Address.data(:countries)).to include(Souffleur::Address.country)
+  end
 end
