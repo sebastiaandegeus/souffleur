@@ -1,5 +1,7 @@
 # Souffleur
 
+[![Build Status](https://scrutinizer-ci.com/g/sebastiaandegeus/souffleur/badges/build.png?b=master)](https://scrutinizer-ci.com/g/sebastiaandegeus/souffleur/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sebastiaandegeus/souffleur/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sebastiaandegeus/souffleur/?branch=master)
 [![Code Climate](https://codeclimate.com/github/sebastiaandegeus/souffleur/badges/gpa.svg)](https://codeclimate.com/github/sebastiaandegeus/souffleur)
 [![Test Coverage](https://codeclimate.com/github/sebastiaandegeus/souffleur/badges/coverage.svg)](https://codeclimate.com/github/sebastiaandegeus/souffleur/coverage)
 
