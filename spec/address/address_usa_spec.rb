@@ -6,10 +6,10 @@ describe Souffleur::Address::USA do
   end
 
   it 'should return a american city' do
-    expect(Souffleur::Address::USA.data(:cities)).to include(Souffleur::Address::USA.city)
+    expect(Souffleur::Address::USA.city).to be_included_in(Souffleur::Address::USA.data(:cities))
   end
 
   it 'should return a american state' do
-    expect(Souffleur::Address::USA.data(:states)).to include(Souffleur::Address::USA.state)
+    expect(Souffleur::Address::USA.state).to be_included_in(Souffleur::Address::USA.data(:states))
   end
 end
