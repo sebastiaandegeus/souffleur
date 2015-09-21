@@ -7,6 +7,7 @@ require 'souffleur/address/address_philippines'
 require 'souffleur/address/address_usa'
 require 'souffleur/name/name_netherlands'
 require 'souffleur/number/number'
+require 'souffleur/lorem/lorem'
 
 # souffleur main module
 module Souffleur
