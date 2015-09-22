@@ -16,4 +16,10 @@ describe Souffleur::Lorem do
       expect(words.count).to be(amount)
     end
   end
+
+  describe '.sentence' do
+    it 'returns a lorem ipsum sentence' do
+      expect(Souffleur::Lorem.sentence).to be_kind_of(String)
+    end
+  end
 end
