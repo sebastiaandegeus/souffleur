@@ -6,3 +6,10 @@ RSpec::Matchers.define :be_included_in do |expected|
     expected.include?(actual)
   end
 end
+
+# contains helper methods to be used in all specs
+module Helper
+  def self.data(path)
+    File.read("#{Souffleur.root}/data/#{path}").split("\n")
+  end
+end

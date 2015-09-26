@@ -5,14 +5,12 @@ module Souffleur
     class Netherlands
       include Data
 
-      HOUSE_NUMBERS = ['1', '12', '123', '1A', '1a', '3 boven', '35 twee-hoog', '8-10']
-
       def self.street
         data(:streets).sample
       end
 
       def self.house_number
-        HOUSE_NUMBERS.sample
+        data(:house_numbers).sample
       end
 
       def self.zipcode
