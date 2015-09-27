@@ -3,15 +3,12 @@ module Souffleur
     class Address
       include Data
 
-      STREETS = ['Ackerstraße', 'Bernauer Straße']
-      CITIES = ['Berlin', 'Munchen', 'Hamburg']
-
-      def self.street
-        STREETS.sample
+      def self.city
+        data(:cities).sample
       end
 
-      def self.city
-        CITIES.sample
+      def self.state
+        data(:states).sample
       end
     end
   end

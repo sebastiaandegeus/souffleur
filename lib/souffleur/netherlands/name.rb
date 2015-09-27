@@ -11,19 +11,17 @@ module Souffleur
         data(:firstnames_male).sample
       end
 
-      def self.lastname
-        data(:lastnames).sample
+      def self.surname
+        data(:surnames).sample
       end
 
-      def self.lastname_prefix
-        data(:lastname_prefixes).sample
+      def self.surname_prefix
+        data(:surname_prefixes).sample
       end
 
       class << self
-        alias_method :last_name, :lastname
-        alias_method :surname, :lastname
-        alias_method :last_name_prefix, :lastname_prefix
-        alias_method :surname_prefix, :lastname_prefix
+        alias_method :last_name, :surname
+        alias_method :last_name_prefix, :surname_prefix
       end
     end
   end
