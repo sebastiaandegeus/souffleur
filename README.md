@@ -27,10 +27,6 @@ Or install it yourself as:
 
 ## Usage
 
-```
-
-### Souffleur::Bitcoin
-
 ```ruby
 Souffleur::Netherlands.Address.city #=> "Rotterdam"
 Souffleur::Netherlands::Address.street #=> "Boompjeskade"
