@@ -1,8 +1,6 @@
-# encoding: utf-8
-
 module Souffleur
-  module Name
-    class Netherlands
+  module Netherlands
+    class Name
       include Data
 
       def self.firstname_female

@@ -1,8 +1,6 @@
-# encoding: utf-8
-
 module Souffleur
-  module Address
-    class Netherlands
+  module Netherlands
+    class Address
       include Data
 
       def self.street

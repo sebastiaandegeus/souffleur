@@ -1,8 +1,6 @@
-# encoding: utf-8
-
 module Souffleur
-  module Address
-    class USA
+  module USA
+    class Address
       include Data
       def self.city
         data(:cities).sample

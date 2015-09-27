@@ -1,8 +1,6 @@
-# encoding: utf-8
-
 module Souffleur
-  module Address
-    class Germany
+  module Germany
+    class Address
       include Data
 
       STREETS = ['Ackerstraße', 'Bernauer Straße']

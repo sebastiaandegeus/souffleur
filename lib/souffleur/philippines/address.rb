@@ -1,8 +1,6 @@
-# encoding: utf-8
-
 module Souffleur
-  module Address
-    class Philippines
+  module Philippines
+    class Address
       include Data
 
       def self.city

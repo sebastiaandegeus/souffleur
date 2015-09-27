@@ -1,13 +1,22 @@
 require 'souffleur/version'
 require 'souffleur/data'
-require 'souffleur/address/address'
-require 'souffleur/address/address_germany'
-require 'souffleur/address/address_netherlands'
-require 'souffleur/address/address_philippines'
-require 'souffleur/address/address_usa'
-require 'souffleur/name/name_netherlands'
-require 'souffleur/number/number'
+
+# Generators
 require 'souffleur/lorem/lorem'
+require 'souffleur/number/number'
+
+# Germany
+require 'souffleur/germany/address'
+
+# Netherlands
+require 'souffleur/netherlands/address'
+require 'souffleur/netherlands/name'
+
+# Philippines
+require 'souffleur/philippines/address'
+
+# USA
+require 'souffleur/usa/address'
 
 # souffleur main module
 module Souffleur
