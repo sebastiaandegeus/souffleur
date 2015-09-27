@@ -5,9 +5,9 @@
 [![Code Climate](https://codeclimate.com/github/sebastiaandegeus/souffleur/badges/gpa.svg)](https://codeclimate.com/github/sebastiaandegeus/souffleur)
 [![Test Coverage](https://codeclimate.com/github/sebastiaandegeus/souffleur/badges/coverage.svg)](https://codeclimate.com/github/sebastiaandegeus/souffleur/coverage)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/souffleur`. To experiment with that code, run `bin/console` for an interactive prompt.
+Souffleur can be used to generate random data for seeds and tests.
 
-TODO: Delete this and the text above, and describe your gem
+Just like a souffleur at a stage play it can whisper the words when you don't know what to say (or type in this case).
 
 ## Installation
 
@@ -27,6 +27,20 @@ Or install it yourself as:
 
 ## Usage
 
+```
+
+### Souffleur::Bitcoin
+
+```ruby
+Souffleur::Netherlands.Address.city #=> "Rotterdam"
+Souffleur::Netherlands::Address.street #=> "Boompjeskade"
+```
+
+## Why another gem?
+
+I created this gem to practice my programming skills. Writing a random data generator is a lot of fun because you can work on automated testing, structuring, writing a clear README and figuring out all kinds of programming challenges.
+
+I strive to make this gem as useful and reliable as possible.
 
 ## Development
 
@@ -37,7 +51,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/souffleur/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
+2. Create your feature branch (`git checkout -b feature/my_new_feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
+4. Push to the branch (`git push origin feature/my_new_feature`)
 5. Create a new Pull Request
